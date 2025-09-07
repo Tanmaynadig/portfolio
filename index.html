@@ -1,0 +1,115 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Tanmay Nadig - Portfolio</title>
+  <style>
+    :root{--bg:#0f1724;--card:#0b1220;--accent:#06b6d4;--muted:#94a3b8;--glass:rgba(255,255,255,0.03)}
+    *{box-sizing:border-box}body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial;background:linear-gradient(180deg,#071029 0%, #071936 100%);color:#e6eef6;line-height:1.5}
+    .container{max-width:1000px;margin:36px auto;padding:24px}
+    header{display:flex;gap:20px;align-items:center}
+    .avatar{width:110px;height:110px;border-radius:14px;background:linear-gradient(135deg,var(--accent),#7c3aed);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:32px;color:#021224;box-shadow:0 8px 30px rgba(2,18,36,0.6)}
+    h1{margin:0;font-size:28px}
+    p.lead{color:var(--muted);margin:6px 0 0}
+    .top-actions{margin-left:auto;display:flex;gap:8px}
+    .btn{background:var(--accent);color:#021224;padding:8px 12px;border-radius:8px;text-decoration:none;font-weight:600}
+    .card{background:var(--card);padding:18px;border-radius:12px;margin-top:18px;box-shadow:0 6px 20px rgba(2,10,18,0.6);border:1px solid rgba(255,255,255,0.03)}
+    .two-col{display:grid;grid-template-columns:1fr 320px;gap:18px;margin-top:18px}
+    .section-title{font-size:16px;margin:0 0 8px;color:#dbe9f5}
+    ul.skills{list-style:none;padding:0;margin:6px 0 0;display:flex;flex-wrap:wrap;gap:8px}
+    ul.skills li{background:var(--glass);color:var(--muted);padding:6px 10px;border-radius:8px;font-size:13px;border:1px solid rgba(255,255,255,0.02)}
+    .project{margin-bottom:12px}
+    .muted{color:var(--muted);font-size:14px}
+    footer{margin-top:28px;text-align:center;color:var(--muted);font-size:13px;padding:20px 0}
+    a.link{color:var(--accent);text-decoration:none}
+    @media(max-width:880px){.two-col{grid-template-columns:1fr;}.top-actions{display:none}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="avatar">TN</div>
+      <div>
+        <h1>Tanmay Nadig N</h1>
+        <p class="lead">AIML student | DevOps & Cloud enthusiast<br/>Mangaluru, Karnataka</p>
+        <p class="muted">+91 9844944793 • <a class="link" href="mailto:tanmaynadign@gmail.com">tanmaynadign@gmail.com</a> • <a class="link" href="https://linkedin.com/in/tanmay-nadig-n" target="_blank">LinkedIn</a></p>
+      </div>
+      <div class="top-actions">
+        <a class="btn" href="#projects">View Projects</a>
+        <a class="btn" href="#contact">Contact</a>
+      </div>
+    </header>
+
+    <div class="card" id="about">
+      <h3 class="section-title">Profile Summary</h3>
+      <p class="muted">Passionate AIML student with a growing interest in DevOps and cloud technologies, skilled in team management, task prioritization, and delivering high-quality projects. Adaptable and proactive, aiming to apply AI expertise and DevOps knowledge to build efficient, scalable solutions.</p>
+    </div>
+
+    <div class="two-col">
+      <div>
+        <div class="card" id="projects">
+          <h3 class="section-title">Projects</h3>
+
+          <div class="project">
+            <h4>AI-Based Hand Gesture Recognition for Smart Presentation Control</h4>
+            <p class="muted">Developed a real-time slide navigation system using MediaPipe for hand landmark detection and LSTM models for static gesture recognition. Implemented face detection and automated camera rotation to track and follow the presenter’s position during presentations. Achieved low-latency performance using a standard webcam, enabling cost-effective, touch-free interaction in classrooms, meetings, and public presentations.</p>
+            <p class="muted"><strong>Technologies:</strong> Python, MediaPipe, OpenCV, TensorFlow, LSTM.</p>
+          </div>
+
+          <div class="project">
+            <h4>Real-Time EEG Signal Analysis and Cognitive State Prediction Using LSTM</h4>
+            <p class="muted">Designed and implemented LSTM networks with STFT for real-time EEG signal processing, enabling accurate classification of cognitive states such as attention and fatigue. Developed hybrid models using HMM, GMM, and Kalman Filters to enhance EEG-based cognitive analysis and optimize adaptive difficulty in educational systems. Set up scalable cloud infrastructure on AWS/GCP and automated DevOps workflows with Jenkins, Docker and Kubernetes.</p>
+            <p class="muted"><strong>Technologies:</strong> Python, LSTM, HMM, GMM, Kalman Filter, AWS, GCP, Docker, Kubernetes, Jenkins.</p>
+          </div>
+
+          <p class="muted">Full project write-ups, code snippets, and demos can be added here on request or linked to GitHub repositories.</p>
+        </div>
+
+        <div class="card" id="education">
+          <h3 class="section-title">Education</h3>
+          <p class="muted"><strong>St Joseph Engineering College</strong> — Bachelor of Engineering (AIML), CGPA 7.95 (2022 - present), Mangalore, Karnataka</p>
+          <p class="muted"><strong>Vishwa Manava Composite PU College</strong> — Pre-University (PUC), 91% (2020 - 2022)</p>
+          <p class="muted"><strong>Indian International School</strong> — Secondary Education, CBSE (2019 - 2020)</p>
+        </div>
+
+        <div class="card" id="certifications">
+          <h3 class="section-title">Certifications</h3>
+          <ul class="muted" style="margin:6px 0 0;padding-left:18px;line-height:1.7">
+            <li>AWS Cloud Quest: Cloud Practitioner</li>
+            <li>Google Skill Boost: Implement DevOps workflows</li>
+          </ul>
+        </div>
+      </div>
+
+      <aside>
+        <div class="card" id="skills">
+          <h3 class="section-title">Technical Skills</h3>
+          <ul class="skills">
+            <li>Python</li><li>C</li><li>C++</li><li>SQL</li>
+            <li>Flask</li><li>TensorFlow</li><li>OpenCV</li><li>MediaPipe</li>
+            <li>Git/GitHub</li><li>VS Code</li><li>AWS</li><li>GCP</li>
+            <li>Docker</li><li>Kubernetes</li><li>Jenkins</li>
+          </ul>
+        </div>
+
+        <div class="card" id="experience">
+          <h3 class="section-title">Experience</h3>
+          <p class="muted"><strong>DeVos Intern — Elevate Labs</strong></p>
+          <p class="muted">Currently interning at Elevate Labs as a DevOps Intern, contributing to cloud infrastructure management, automation workflows, and deployment optimization. Working on implementing CI/CD pipelines, containerization, and monitoring solutions to enhance scalability and reliability of production systems.</p>
+        </div>
+
+        <div class="card" id="contact">
+          <h3 class="section-title">Contact</h3>
+          <p class="muted">Email: <a class="link" href="mailto:tanmaynadign@gmail.com">tanmaynadign@gmail.com</a></p>
+          <p class="muted">Phone: +91 9844944793</p>
+          <p class="muted">LinkedIn: <a class="link" href="https://linkedin.com/in/tanmay-nadig-n" target="_blank">linkedin.com/in/tanmay-nadig-n</a></p>
+        </div>
+      </aside>
+    </div>
+
+    <footer>Built from resume provided by Tanmay Nadig. Download, host on GitHub Pages, or request edits. </footer>
+  </div>
+</body>
+</html>
